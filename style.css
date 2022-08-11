@@ -52,18 +52,26 @@ body {
 
 .main__container {
   padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .form {
   margin: 0 auto;
   max-width: 600px;
+  padding: 0 36px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.form__label {
+  width: 100%;
+}
+
 .form__input {
   display: block;
+  box-sizing: border-box;
+  width: 100%;
   margin-top: 4px;
   margin-bottom: 14px;
   padding: 4px 10px;
