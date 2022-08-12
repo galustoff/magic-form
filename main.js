@@ -7,9 +7,11 @@ restoreData()
 form.addEventListener('input', storeData)
 form.addEventListener('submit', makeRecord)
 
+setInterval(restoreData, 100)
+
 function restoreData() {
   inputs.forEach((i) => {
-    i.value = ls[i.name] || ""
+    i.value = ls[i.name] || ''
   })
 }
 
