@@ -2,14 +2,18 @@ const ls = localStorage
 const form = document.getElementById('form')
 const inputs = Array.from(document.querySelectorAll('.form__input'))
 
-inputs.forEach((i) => {
-  value = ls.getItem(i.name)
+form.addEventListener('submit', makeRecord)
 
-  if (value) {
-    i.value = value
-  }
-})
+function makeRecord(e) {
+  e.preventDefault()
 
-form.addEventListener('input', (e) => {
-  ls.setItem(e.target.name, e.target.value)
-})
+  let record = {}
+
+  inputs.forEach((i) => {
+    record[i.name] = i.value
+  })
+
+  ls.setItem(`record${ls.length + 1}`, JSON.stringify(record))
+
+  form.reset()
+}
