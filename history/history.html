@@ -2,69 +2,69 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="#" type="image/x-icon">
-  <link rel="stylesheet" href="history.css">
-  <title>Magic Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="history.css">
+    <title>Magic Form</title>
 </head>
 
 <body>
-  <header class="header">
-    <div class="container header__container">
-      <nav>
-        <ul class="header__list">
-          <li><a href="../index.html" class="header__link" id="form-link">Form</a></li>
-          <li><a href="#" class="header__link" id="history-link">History</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header class="header">
+        <div class="container header__container">
+            <nav>
+                <ul class="header__list">
+                    <li><a href="../index.html" class="header__link" id="form-link">Form</a></li>
+                    <li><a href="#" class="header__link" id="history-link">History</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <main class="main">
-    <div class="container main__container">
-    </div>
-  </main>
+    <main class="main">
+        <div class="container main__container">
+        </div>
+    </main>
 
-  <template id="card-template">
-    <div class="card">
+    <template id="card-template">
+        <div class="card submit-history-card">
 
-      <div class="card__record">
-        <h2 class="card__title">First Name</h2>
-        <p class="card__content" id="first-name"></p>
-      </div>
+            <div class="card__record">
+                <h2 class="card__title">First Name</h2>
+                <p class="card__content card-first-name" id="first-name"></p>
+            </div>
 
-      <div class="card__record">
-        <h2 class="card__title">Last Name</h2>
-        <p class="card__content" id="last-name"></p>
-      </div>
+            <div class="card__record">
+                <h2 class="card__title">Last Name</h2>
+                <p class="card__content card-last-name" id="last-name"></p>
+            </div>
 
-      <div class="card__record">
-        <h2 class="card__title">Email</h2>
-        <p class="card__content" id="email"></p>
-      </div>
+            <div class="card__record">
+                <h2 class="card__title">Email</h2>
+                <p class="card__content card-email" id="email"></p>
+            </div>
 
-      <div class="card__record">
-        <h2 class="card__title">Phone</h2>
-        <p class="card__content" id="phone"></p>
-      </div>
+            <div class="card__record">
+                <h2 class="card__title">Phone</h2>
+                <p class="card__content card-phone" id="phone"></p>
+            </div>
 
-      <div class="card__record">
-        <h2 class="card__title">Company</h2>
-        <p class="card__content" id="company"></p>
-      </div>
+            <div class="card__record">
+                <h2 class="card__title">Company</h2>
+                <p class="card__content card-company" id="company"></p>
+            </div>
 
-      <div class="card__record">
-        <h2 class="card__title">Address</h2>
-        <p class="card__content" id="address"></p>
-      </div>
+            <div class="card__record">
+                <h2 class="card__title">Address</h2>
+                <p class="card__content card-address" id="address"></p>
+            </div>
 
-      <button type="button" class="card__del-btn">Delete</button>
-    </div>
-  </template>
+            <button type="button" class="card__del-btn delete-button">Delete</button>
+        </div>
+    </template>
 
-  <script src="./history.js"></script>
+    <script src="./history.js"></script>
 </body>
 
 </html>
